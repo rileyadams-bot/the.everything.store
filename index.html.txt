@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Everything Store | Market Day Project</title>
+    <style>
+        :root {
+            --primary: #1e3d59;
+            --secondary: #ff6e40;
+            --accent: #ffc107;
+            --bg-light: #f5f0eb;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--secondary);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        .weather-banner {
+            background-color: var(--accent);
+            color: #333;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .team-section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .team-member {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to The Everything Store!</h1>
+        <p>Looking for something fun, tasty, or exciting? We have it all!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="weather-banner">
+            ☀️ Weather Forecast: Warm with clear skies — Perfect for Market Day!
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>🛍️ Trading Goods</h2>
+                <ul>
+                    <li>NeeDoh and Dumpling Squishies</li>
+                    <li>Butter Squishy</li>
+                    <li>Slinkies</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🍿 Manufactured Goods</h2>
+                <ul>
+                    <li>Delicious Sweets</li>
+                    <li>Ice Cream</li>
+                    <li>Chocolates</li>
+                    <li>Cool Drinks</li>
+                    <li>Tasty Boerewors Rolls</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🎯 Services & Games</h2>
+                <ul>
+                    <li><strong>Slip 'n Slide Penalty Shootout:</strong> Score a goal to win!</li>
+                    <li><strong>Football Juggling Challenge:</strong> Test your skills for a prize!</li>
+                    <li><strong>Spin the Wheel:</strong> Win a challenge or game to spin for additional prizes!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>👥 Meet the Team & Responsibilities</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Thomas Abrahams</h3>
+                    <p>In charge of purchasing and controlling Trading Goods.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Riley Adams</h3>
+                    <p>In charge of Manufactured Goods purchasing.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Heath De Freitas</h3>
+                    <p>In charge of Manufactured Goods purchasing & Services planning.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>The Everything Store — EMS Market Day Group Project</p>
+    </footer>
+
+</body>
+</html>
